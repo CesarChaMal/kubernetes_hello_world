@@ -27,6 +27,7 @@ docker push cesarchamal/my-node-app
 kubectl apply -f config/deployment.yaml
 kubectl get pods
 kubectl logs my-node-app-service
+kubectl delete deployment my-node-app-deployment
 kubectl delete pod my-node-app-deployment-5c6c969df6-67b54 my-node-app-deployment-857f55d67f-n8dt8
 kubectl delete pods -l app=my-node-app
 ```
